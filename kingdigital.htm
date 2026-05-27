@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Digital | Agencia Digital Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7928CA', // Color principal: Morado tecnológico
+                        secondary: '#FF0080', // Color secundario: Rosa moderno
+                        dark: '#0F172A', // Color oscuro corporativo
+                        light: '#F8FAFC',
+                        accent: '#00F5D4' // Acento turquesa
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .scroll-smooth { scroll-behavior: smooth; }
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.15); }
+            .gradient-text {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-white scroll-smooth">
+    <!-- Barra de Navegación -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-lg z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo de la Empresa -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-xl font-bold shadow-md">
+                    K
+                </div>
+                <div>
+                    <span class="font-bold text-xl bg-gradient-to-r from-primary to-secondary gradient-text">KING DIGITAL</span>
+                    <p class="text-xs text-gray-500 -mt-1">Soluciones Digitales Profesionales</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex gap-8">
+                <a href="#inicio" class="font-medium hover:text-primary transition-colors">Inicio</a>
+                <a href="#nosotros" class="font-medium hover:text-primary transition-colors">Nosotros</a>
+                <a href="#servicios" class="font-medium hover:text-primary transition-colors">Servicios</a>
+                <a href="#portafolio" class="font-medium hover:text-primary transition-colors">Portafolio</a>
+                <a href="#contacto" class="font-medium hover:text-primary transition-colors">Contacto</a>
+            </div>
+            <button class="md:hidden text-dark text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="min-h-screen flex items-center bg-gradient-to-br from-light via-white to-purple-50 pt-16">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-shadow mb-4">
+                        Impulsa tu Negocio con <br>
+                        <span class="bg-gradient-to-r from-primary to-secondary gradient-text">King Digital</span>
+                    </h1>
+                    <p class="text-gray-600 text-lg md:text-xl mb-8 max-w-xl">
+                        Somos tu socio estratégico en el mundo digital. Creamos experiencias únicas, tecnología de vanguardia y estrategias que hacen crecer tu marca. Lanzamiento oficial: 26 de Mayo de 2026.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contacto" class="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Solicitar Cotización
+                        </a>
+                        <a href="#servicios" class="bg-white hover:bg-gray-50 text-dark border border-gray-200 px-8 py-3 rounded-lg font-semibold transition-all shadow-md">
+                            Ver Servicios
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 relative">
+                    <div class="w-full h-[350px] md:h-[500px] bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center relative">
+                        <!-- Logo grande central -->
+                        <div class="w-40 h-40 rounded-2xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-6xl font-bold shadow-2xl z-10">
+                            K
+                        </div>
+                        <div class="absolute bottom-6 text-center">
+                            <h3 class="text-3xl font-bold text
